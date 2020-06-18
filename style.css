@@ -66,6 +66,7 @@ body {
 
 /* CARD */
 .card-container {
+    /* border: 1px solid red; */
     display: flex;
     flex-direction: row;
     height: 209px;
@@ -169,7 +170,7 @@ body {
 /* END OF RIGHT SIDE OF CARD */
 
 /* for desktops */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 769px) {
     main {
         display: flex;
         flex-direction: row;
@@ -182,7 +183,7 @@ body {
     }
 
     .right {
-        max-width: 250px;
+        width: 250px;
     }
 }
 
