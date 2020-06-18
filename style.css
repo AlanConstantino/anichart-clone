@@ -14,7 +14,7 @@ header {
 }
 
 /* Start of form */
-header nav {
+/* header nav {
     margin-bottom: 1rem;
 }
 
@@ -25,7 +25,7 @@ header form input {
 
 header form label {
     font-size: 12px;
-}
+} */
 /* End of form */
 
 body {
