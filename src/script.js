@@ -115,10 +115,6 @@ function requestNavbarSeasonMedia(navitem) {
 // checkbox event handler function
 function checkBoxEventHandler() {
   Dom.clearMainTag();
-  // don't think is necessary
-  // if (navbarSeason === '') {
-  //   navbarSeason = currentSeason;
-  // }
   const request = api.makeRequest(query, navbarSeason);
   request.then(data => api.handleData(data, checkBox.checked));
 }
