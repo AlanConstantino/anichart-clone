@@ -4,9 +4,9 @@ I utilized JavaScript, HTML, CSS, and AniList's GraphQL API to create a website 
 You can visit the website [here](https://anime.alanconstantino.com/).
 
 ## TODO:
-- [x] Refactor code so its maintainability and speed improves
 - [ ] Look into caching using indexedDB for faster subsequent loads
-- [ ] Add an NSFW banner over NSFW content (or hide it by default)
+- [x] Refactor code so its maintainability and speed improves
+- [x] Add an NSFW banner over NSFW content (or hide it by default)
 
 ## BUGS:
 - [x] Whenever a card doesn't have a long enough description, its width looks off compared to other cards
@@ -21,9 +21,9 @@ You can visit the website [here](https://anime.alanconstantino.com/).
 - [ ] Add a light/dark theme you can click on
 - [ ] Instead of displaying the type underneath the title, categorize them by type similar to anichart
 - [ ] Add sorting functionality (sort by name, rank, avg. score, nsfw, etc.)
-- [x] Maybe add a NSFW filter so, if clicked, will show NSFW content. By default (unclicked) it doesn't show NSFW content.
 - [ ] Add a search funcionality (search by the name of the anime in english or romaji or both)
 - [ ] Whenever a user clicks on a card, make a popup card with extra info instead of redirecting to the anilist site.
+- [x] Maybe add a NSFW filter so, if clicked, will show NSFW content. By default (unclicked) it won't show NSFW content.
 
 # Installing onto your machine
 1. Clone this repository
