@@ -24,3 +24,20 @@ You can visit the website [here](https://anime.alanconstantino.com/).
 - [x] Maybe add a NSFW filter so, if clicked, will show NSFW content. By default (unclicked) it doesn't show NSFW content.
 - [ ] Add a search funcionality (search by the name of the anime in english or romaji or both)
 - [ ] Whenever a user clicks on a card, make a popup card with extra info instead of redirecting to the anilist site.
+
+# Installing onto your machine
+1. Clone this repository
+   - `git clone https://github.com/AlanConstantino/anichart-clone.git`
+2. Install npm dependencies
+   - `npm install --save-dev`
+3. Run the build
+   - `npm run build`
+4. Optional: Have webpack watch for any changes
+   - Go to "webpack.config.js" and add the following to module.exports: `watch: true`
+     ```
+     module.exports = {
+        ...
+        watch: true,
+        ...
+     }
+     ```
