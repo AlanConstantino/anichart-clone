@@ -10,6 +10,7 @@ You can visit the website [here](https://anime.alanconstantino.com/).
 
 ## BUGS:
 - [ ] Cards and navbar year doesn't load properly on mobile
+      - Import and export statements aren't supported natively on all browsers so you have to use something like Babel to transpile JS code
 - [ ] Whenever a card doesn't have a long enough description, its width looks off compared to other cards
  - Solution: Try making a set width for cards on certain screens. (Through CSS)
  - Fixed the card width issue for single row cards. If more that 2 cards get displayed in a row, issue still persists.
