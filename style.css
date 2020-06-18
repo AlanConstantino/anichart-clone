@@ -1,0 +1,202 @@
+* {
+    box-sizing: border-box;
+    color: #ffffff;
+    font-family: Overpass, Arial, Helvetica, sans-serif; 
+    font-size: 1.2rem;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: block;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+/* Start of form */
+header nav {
+    margin-bottom: 1rem;
+}
+
+header form input {
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+header form label {
+    font-size: 12px;
+}
+/* End of form */
+
+body {
+    background-color: #262839;
+    margin: 0 5vw;
+    margin-top: 1.5rem;
+}
+
+/* NAVIGATION BAR */
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.navbar a {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    cursor: pointer;
+    color: #b4b6d6;
+}
+
+.navbar a {
+    font-size: 1rem;
+}
+
+.navbar span {
+    font-size: 0.8rem;
+}
+/* END OF NAVIGATION BAR */
+
+
+/* CARD */
+.card-container {
+    display: flex;
+    flex-direction: row;
+    height: 209px;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+}
+
+.card-container:hover {
+    opacity: .90;
+}
+
+.left p, .right p {
+    color: #93abbb;
+    font-size: 0.6rem;
+}
+
+.description p i, .description p{
+    color: #93abbb;
+    font-size: 0.6rem;
+}
+/* END OF CARD */
+
+
+/* LEFT SIDE OF CARD */
+.left {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.left, .cover-image {
+    position: relative;
+    width: 140px;
+    height: 209px;
+}
+
+.info {
+    background-color:rgba(31, 34, 41, 0.927);
+    padding: 10px;
+    width: 140px;
+    position: absolute;
+    text-transform: capitalize;
+}
+
+.info .title {
+    color: #ffffff;
+}
+/* END OF LEFT SIDE OF CARD */
+
+
+/* RIGHT SIDE OF CARD */
+.right {
+    width: 100%;
+    overflow: auto;
+    padding: 0.7rem;
+    background-color: #1D2028;
+}
+
+.airing-rating-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 0.4rem;
+    text-transform: capitalize;
+}
+
+.airing-rating-container .date {
+    color: #ffffff;
+    font-size: 0.75rem;
+}
+
+.rating p:first-child {
+    color: #ffffff;
+}
+
+.genre {
+    margin-bottom: 0.4rem;
+}
+
+.genre p {
+    color: #ffffff;
+}
+
+::-webkit-scrollbar {
+    width: .3rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #1D2028;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 100px;
+    background: #5f6b78; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    display: block;
+    background: #687583; 
+}
+/* END OF RIGHT SIDE OF CARD */
+
+/* for desktops */
+@media screen and (min-width: 1024px) {
+    main {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .card-container {
+        margin: 1rem;
+    }
+
+    .right {
+        max-width: 250px;
+    }
+}
+
+/* for smaller screen sizes */
+@media screen and (max-width: 343px) {
+    * {
+        font-size: 1rem;
+    }
+
+    .left p, .right p{
+        font-size: 0.45rem;
+    }
+
+    .airing-rating-container .date {
+        font-size: 0.55rem;
+    }
+}
