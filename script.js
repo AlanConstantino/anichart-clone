@@ -1,9 +1,10 @@
-import Api from './classes/api_class.js';
-import Dom from './classes/dom_class.js';
+// import Api from './classes/api_class.js';
+// import Dom from './classes/dom_class.js';
 import Util from './classes/util_class.js';
 
-const currentYear = Util.getCurrentYear();
-const currentSeason = Util.getCurrentSeason();
+// const currentYear = Util.getCurrentYear();
+const currentYear = new Date().getFullYear();
+// const currentSeason = Util.getCurrentSeason();
 let navbarSeason = ''; // storing the season of the nav temporarily for checkBoxValidation()
 const url = 'https://graphql.anilist.co';
 const options = {
