@@ -1,6 +1,6 @@
 // import Api from './classes/api_class.js';
 // import Dom from './classes/dom_class.js';
-import Util from './classes/util_class.js';
+// import Util from './classes/util_class.js';
 
 // const currentYear = Util.getCurrentYear();
 const currentYear = new Date().getFullYear();
@@ -87,7 +87,9 @@ const checkBox = document.getElementById('nsfw');
 
 // // sets the current year to each navbar item
 // // i.e. "Winter 2020", "Spring 2020", etc.
-Util.setSeasonYearNavbar(currentYear);
+const navbarElements = [...document.getElementsByClassName('season-year')];
+navbarElements.forEach(element => element.innerText = currentYear);
+// Util.setSeasonYearNavbar(currentYear);
 
 // // creating instances of the Api and Dom class
 // const api = new Api(url, options, variables, query);
