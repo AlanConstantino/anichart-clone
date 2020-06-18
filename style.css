@@ -14,18 +14,18 @@ header {
 }
 
 /* Start of form */
-/* header nav {
+header nav {
     margin-bottom: 1rem;
 }
 
 header form input {
-    width: 0.5rem;
-    height: 0.5rem;
+    width: 0.6rem;
+    height: 0.6rem;
 }
 
 header form label {
-    font-size: 12px;
-} */
+    font-size: 0.8rem;
+}
 /* End of form */
 
 body {
