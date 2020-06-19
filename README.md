@@ -19,6 +19,7 @@ You can visit the website [here](https://anime.alanconstantino.com/).
 
 ## EXTRA FEATURES:
 - [ ] Add a light/dark theme you can click on
+- [ ] Add a collapsable menu underneath the seasons where, once clicked, expands to display extra options such as NSFW filter, sorting, etc.
 - [ ] Instead of displaying the type underneath the title, categorize them by type similar to anichart
 - [ ] Add sorting functionality (sort by name, rank, avg. score, nsfw, etc.)
 - [ ] Add a search funcionality (search by the name of the anime in english or romaji or both)
