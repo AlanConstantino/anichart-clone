@@ -3,6 +3,13 @@ I utilized JavaScript, HTML, CSS, and AniList's GraphQL API to create a website 
 
 You can visit the website [here](https://anime.alanconstantino.com/).
 
+# Images
+![Anichart Clone](./images/anichart-clone.png)
+![Anichart Clone Desktop](./images/anichart-clone-desktop.png)
+![Anichart Clone Mobile](./images/anichart-clone-mobile.png)
+![Anichart Clone Spring](./images/anichart-clone-mobile-spring.png)
+![Anichart Clone Winter](./images/anichart-clone-mobile-winter.png)
+
 ## TODO:
 - [ ] Look into caching using indexedDB for faster subsequent loads
 - [x] Refactor code so its maintainability and speed improves
