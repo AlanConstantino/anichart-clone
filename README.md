@@ -6,9 +6,9 @@ You can visit the website [here](https://anime.alanconstantino.com/).
 # Images
 ![Anichart Clone](./images/anichart-clone.png)
 ![Anichart Clone Desktop](./images/anichart-clone-desktop.png)
-![Anichart Clone Mobile](./images/anichart-clone-mobile.png)
-![Anichart Clone Spring](./images/anichart-clone-mobile-spring.png)
-![Anichart Clone Winter](./images/anichart-clone-mobile-winter.png)
+![Anichart Clone Mobile](./images/anichart-clone-mobile.PNG)
+![Anichart Clone Spring](./images/anichart-clone-mobile-spring.PNG)
+![Anichart Clone Winter](./images/anichart-clone-mobile-winter.PNG)
 
 ## TODO:
 - [ ] Look into caching using indexedDB for faster subsequent loads
