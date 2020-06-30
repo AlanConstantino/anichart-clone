@@ -211,6 +211,9 @@ body {
     background: #687583; 
 }
 /* END OF RIGHT SIDE OF CARD */
+
+
+/* Start of loading icon */
 .loading-icon {
     margin: 0 auto;
     border: 0.7rem solid #f3f3f3; /* Light grey */
@@ -225,8 +228,6 @@ body {
     0% { transform: rotate(0deg); }
     100% { transform: rotate(360deg); }
 }
-/* Start of loading icon */
-
 /* End of loading icon */
 
 
