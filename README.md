@@ -12,7 +12,7 @@ You can visit the website [here](https://anime.alanconstantino.com/).
 
 ## TODO:
 - [ ] Look into caching using indexedDB for faster subsequent loads
-- [ ] Refactor the loading icon code
+- [x] Refactor the loading icon code
   - Maybe convert it into a class
 - [x] Refactor code so its maintainability and speed improves
 - [x] Add an NSFW banner over NSFW content (or hide it by default)
