@@ -22,31 +22,26 @@ export default class Util {
         12: 'December',
     };
 
+    // checks to see if item passed is valid (not equal to null or undefined)
+    static valid(item) {
+        return (item !== null) && (item !== undefined);
+    }
+
     // returns the current season we are currently in
     static getCurrentSeason() {
         try {
             const month = new Date().getMonth();
+            const winter = (month === 11) || (month === 0) || (month === 1);
+            const spring = (month === 2)  || (month === 3) || (month === 4);
+            const summer = (month === 5)  || (month === 6) || (month === 7);
+            const fall =   (month === 8)  || (month === 9) || (month === 10);
+            const noSeason = (!winter && !spring && !summer && !fall);
 
-            switch (month) {
-                case 11: // december
-                case 0: // january
-                case 1: // february
-                    return this.SEASONS.WINTER;
-                case 2: // march
-                case 3: // april
-                case 4: // may
-                    return this.SEASONS.SPRING;
-                case 5: // june
-                case 6: // july
-                case 7: // august
-                    return this.SEASONS.SUMMER;
-                case 8: // september
-                case 9: // october
-                case 10: // november
-                    return this.SEASONS.FALL;
-                default:
-                    throw 'Error: Couldn\'t get current season.';
-            }
+            if (winter) return this.SEASONS.WINTER;
+            if (spring) return this.SEASONS.SPRING;
+            if (summer) return this.SEASONS.SUMMER;
+            if (fall)   return this.SEASONS.FALL;
+            if (noSeason) throw 'Error: Couldn\'t get current season.'; 
         } catch (err) {
             console.log(err);
         }
@@ -55,17 +50,11 @@ export default class Util {
     // returns properly formated date to be displayed on card
     static formatDate(month, day, year) {
         let date = '';
-        if (month !== null && month !== undefined) {
-            date += month + ' ';
-        }
+        const valid = (item) => (item !== null) && (item !== undefined);
 
-        if (day !== null && day !== undefined) {
-            date += day + ', ';
-        }
-
-        if (year !== null && year !== undefined) {
-            date += year;
-        }
+        if(valid(month)) date += month + ' ';
+        if(valid(day))   date += day + ', ';
+        if(valid(year))  date += year;
 
         return date;
     }
