@@ -19,20 +19,16 @@ export default class Api {
 
   // private helper method
   _setSeason(season) {
-    if (season === undefined || season === null) {
-      this.variables.season = Util.getCurrentSeason();
-    } else {
-      this.variables.season = season;
-    }
+    if(season === undefined || season === null) this.variables.season = Util.getCurrentSeason();
+    if(season !== undefined && season !== null) this.variables.season = season;
   }
 
   // 'season' argument is optional
   // - if not specified, will request data from the current season
   // - if specified, will request data from that specific season
   async makeRequest(query, season) {
-    if (season) {
-      this._setSeason(season);
-    }
+    if (season) this._setSeason(season);
+
     this.setOptionsBody(query);
     const data = await fetch(this.url, this.options)
       .then(this._handleResponse)
@@ -43,9 +39,10 @@ export default class Api {
   // private helper method
   // checks to see if the response from the API is valid
   _handleResponse(response) {
-    return response.json().then(function (json) {
-      return response.ok ? json : Promise.reject(json);
-    });
+    return response.json()
+                   .then(
+                     json => response.ok ? json : Promise.reject(json)
+                   );
   }
 
   // private helper method
@@ -71,6 +68,6 @@ export default class Api {
     this.variables.page++;
     this.setOptionsBody(this.query, this.variables);
     const request = this.makeRequest(this.query);
-    request.then(data => this.handleData(data));
+    request.then(data => this.handleData(data)); // recursive call
   }
 }

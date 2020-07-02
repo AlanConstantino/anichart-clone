@@ -4,27 +4,12 @@ export default class Dom {
         this.main = document.getElementById('main');
         // store a reference to the navbar's children
         this.navbar = document.getElementById('navbar').children;
-    }
-
-    // 'classes' can either be a single css class or an array of multiple css classes
-    createElement(typeOfElement = 'div', classes = '') {
-        const element = document.createElement(typeOfElement);
-
-        if (classes === '') {
-            return element;
-        }
-
-        if (Array.isArray(classes)) {
-            classes.forEach(cssClass => element.classList.add(cssClass));
-        } else {
-            element.classList.add(classes);
-        }
-
-        return element;
+        // store a reference to the loading icon <div>
+        this.loadIcon = document.getElementsByClassName('loading-icon')[0];
     }
 
     // Doesn't make sense to have an instance just to use this method therefore, it's static.
-    // clears everything within the <main> tag22
+    // clears everything within the <main> tag
     static clearMainTag() {
         const main = document.getElementById('main');
         while (main.firstChild) {
@@ -47,16 +32,10 @@ export default class Dom {
     // 'classes' can either be a single css class or an array of multiple css classes
     static createElement(typeOfElement = 'div', classes = '') {
         const element = document.createElement(typeOfElement);
-
-        if (classes === '') {
-            return element;
-        }
-
-        if (Array.isArray(classes)) {
-            classes.forEach(cssClass => element.classList.add(cssClass));
-        } else {
-            element.classList.add(classes);
-        }
+        
+        if (classes === '') return element;
+        if(Array.isArray(classes)) classes.forEach(cssClass => element.classList.add(cssClass));
+        if(!Array.isArray(classes)) element.classList.add(classes);
 
         return element;
     }
