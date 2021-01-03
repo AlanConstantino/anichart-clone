@@ -1,7 +1,7 @@
-# [anichart-clone](https://anime.alanconstantino.com/)
+# [anichart-clone](https://anime.alanjc.com/)
 I utilized JavaScript, HTML, CSS, and AniList's GraphQL API to create a website similar to [AniChart](https://anichart.net/).
 
-You can visit the website [here](https://anime.alanconstantino.com/).
+You can visit the website [here](https://anime.alanjc.com/).
 
 # Images
 ![Anichart Clone](./images/anichart-clone.png)
